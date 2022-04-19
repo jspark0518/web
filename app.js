@@ -11,7 +11,7 @@ var moves = document.querySelectorAll('.move-control');
 var transitions = document.querySelectorAll('.transition-control');
 
 // ** Replace demo applicationKey with your application key **
-var key = 'wh7mas98d1teyaxz304n7ziza';
+var key = 'a8a9d13f-7212-4cf6-865a-f11c42a843a1';
 
 var settings = {
   sweep: '',
@@ -20,7 +20,7 @@ var settings = {
 };
 
 // Define iframe's src with my Space url
-iframe.setAttribute('src', 'https://my.matterport.com/show/?m=4b7PfSfJgXb');
+iframe.setAttribute('src', 'https://my.matterport.com/show/?m=cKHMpazixm2&hhl=0&play=1&tiles=1&hl=0');
 
 // Initialize showcase SDK when iframe has loaded
 iframe.addEventListener('load', showcaseLoader, true);
