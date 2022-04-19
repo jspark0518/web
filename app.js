@@ -20,7 +20,7 @@ var settings = {
 };
 
 // Define iframe's src with my Space url
-iframe.setAttribute('src', 'https://my.matterport.com/show/?m=cKHMpazixm2&hhl=0&play=1&tiles=1&hl=0');
+iframe.setAttribute('src', 'https://my.matterport.com/show/?m=4b7PfSfJgXb');
 
 // Initialize showcase SDK when iframe has loaded
 iframe.addEventListener('load', showcaseLoader, true);
