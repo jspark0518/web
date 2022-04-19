@@ -1,0 +1,196 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+h3, h5, h6, a {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000000;
+}
+
+button {
+    font-size: 18px;
+}
+
+.mp-content.container {
+    height: auto;
+    max-width: none;
+}
+
+.control.btn {
+    padding: 5px auto;
+    background-color: #222222;
+    font-family: 'Roboto', sans-serif;
+}
+
+.control.btn:hover {
+    background-color: #ff3158;
+}
+
+.control.btn:focus {
+    background-color:   #39c2b4;
+}
+
+.control.btn.active {
+    background-color: #444444;
+}
+
+.control-group .btn-group {
+    display: inline-block;
+    padding: 5px;
+}
+
+.transition-control, .mode-control {
+    font-size: 12px;
+    padding: 0 10px;
+    min-width: 60px;
+}
+
+.rotation-control {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.map-container {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    padding: 5px 5px 0px 5px;
+}
+
+.map:after {
+  padding-top: 5%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+.map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    font-size: 10px;
+}
+
+.map img {
+    width: 100%;
+}
+
+.map .sweep, .map .sweep:visited {
+    color: transparent;
+    display: inline-block;
+    position: absolute;
+    padding: 0 0;
+    margin: 0;
+    height: 0.8rem;
+    width: 0.8rem;
+    border: 0.25rem solid rgba(255, 255, 0, 0.79);
+    border-radius: 50%;
+    box-sizing: content-box;
+    background-color: transparent;
+    font-size: 10px;
+}
+
+.sweep.active {
+    background-color: orangered;
+    border: 0.25rem solid rgba(255, 255, 0, 0.79);
+}
+
+.sweep:hover {
+    background-color: rgba(255, 255, 0, 0.79);
+}
+
+.control.left, .control.right {
+    width: 45%;
+    border-radius: 0;
+}
+
+.control.right {
+    text-align: right;
+}
+
+.control.left {
+    text-align: left;
+}
+
+.connect-control {
+    min-height: 50px;
+}
+
+@media only screen and (min-width: 601px) {
+    .row .col.m8  {
+        width: 100%;
+        margin: 10px;
+    }
+    .row .col.m4  {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 85%;
+    }
+}
+
+.player {
+    padding: 5px 5px 0px 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.mode-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.row .col.s3 {
+    margin-left: 0px;
+}
+
+#navigation-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.dpad-controls {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.left-right {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.btn-flat .material-icons {
+    font-size: 3rem;
+}
+
+.btn-flat .material-icons:hover {
+    color: #ff3158;
+}
+
+.move-control:focus {
+    background-color: white;
+}
