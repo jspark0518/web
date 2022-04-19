@@ -11,7 +11,7 @@ var moves = document.querySelectorAll('.move-control');
 var transitions = document.querySelectorAll('.transition-control');
 
 // ** Replace demo applicationKey with your application key **
-var key = 'a8a9d13f-7212-4cf6-865a-f11c42a843a1';
+var key = 'wh7mas98d1teyaxz304n7ziza';
 
 var settings = {
   sweep: '',
