@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Matterport SDK</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection">
+  <link href="./style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" class='build keep'></script>
+  <script src="https://static.matterport.com/showcase-sdk/2.0.1-0-g64e7e88/sdk.js" class='build keep'></script>
+</head>
+<body class="gray">
+
+<div class="mp-content container white-text">
+  <div class="row">
+    <div class="player">
+      <div class="video-container">
+        <iframe id='showcase' width="400" height="480" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="map-container">
+      <img class="responsive-img" src="./a.png" alt="">
+
+      <div id="map" class="map">
+      </div>
+    </div>
+
+    <div class="control-group valign-wrapper m4">
+      <div class="mode-controls">
+        <div class="control-group btn-group s12">
+          <h6>Style</h6>
+          <button id="FLY" value="FLY" class="transition-control control btn white-text active">Fly</button>
+          <button id="FADEOUT" value="FADEOUT" class="transition-control control btn white-text">Fade</button>
+          <button id="INSTANT" value="INSTANT" class="transition-control control btn white-text">Instant</button>
+        </div>
+        <div class="control-group btn-group s12">
+          <h6>Mode</h6>
+          <button id="INSIDE" value="INSIDE" class="mode-control control btn white-text active">Inside</button>
+          <button id="DOLLHOUSE" value="DOLLHOUSE" class="mode-control control btn white-text">Dollhouse</button>
+          <button id="FLOORPLAN" value="FLOORPLAN" class="mode-control control btn white-text">Floorplan</button>
+        </div>
+      </div>
+      <div class="dpad-controls">
+        <h6>Move</h5>
+        <div class="move-controls s3">
+          <button id="FORWARD" value="FORWARD" class="move-control btn-flat s12">
+            <i class="material-icons">keyboard_arrow_up</i></button>
+          <div class="left-right">
+            <button id="LEFT" value="LEFT" class="move-control btn-flat s6">
+              <i class="material-icons">keyboard_arrow_left</i></button>
+            <button id="RIGHT" value="RIGHT" class="move-control btn-flat s6">
+              <i class="material-icons">keyboard_arrow_right</i></button>
+          </div>
+          <button id="BACK" value="BACK" class="move-control btn-flat s12">
+            <i class="material-icons">keyboard_arrow_down</i></button>
+        </div>
+      </div>
+      <div class="dpad-controls">
+        <h6 class="s14">Rotate</h5>
+        <div class="rotation-controls s3">
+          <button id="ABOVE" value="UP" class="move-control btn-flat s12">
+            <i class="material-icons">keyboard_arrow_up</i></button>
+          <div class="left-right">
+            <button id="LTURN" value="LEFT" class="move-control btn-flat s6">
+              <i class="material-icons">keyboard_arrow_left</i></button>
+            <button id="RTURN" value="RIGHT" class="move-control btn-flat s6">
+              <i class="material-icons">keyboard_arrow_right</i></button>
+          </div>
+          <button id="BELOW" value="DOWN" class="move-control btn-flat s12">
+            <i class="material-icons">keyboard_arrow_down</i></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script src="./app.js" class='build keep'></script>
+</body>
+</html>
